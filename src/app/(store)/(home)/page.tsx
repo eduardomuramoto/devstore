@@ -48,6 +48,7 @@ export default async function Home() {
       </Link>
       {otherProducts.map((product) => {
         return (
+          // eslint-disable-next-line react/jsx-key
           <Link
             href={`/product/${product.slug}`}
             className="group relative col-span-3 row-span-3 rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-end"
